@@ -1,3 +1,9 @@
+terraform {
+    backend "s3" {
+        key = "global/state/terraform.tfstate"
+    }
+}
+
 provider "aws" {
     region = "eu-west-2"
 }
