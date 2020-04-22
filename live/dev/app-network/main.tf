@@ -29,7 +29,7 @@ resource "aws_subnet" "app_subnets" {
     vpc_id                  = aws_vpc.app_vpc.id
 
     tags = {
-        "kubernetes.io/cluster/${data.terraform_remote_state.eks_cluster.eks_cluster_name}" = "shared"
+        "kubernetes.io/cluster/${var.eks_cluster_name}" = "shared"
     }
 }
 
