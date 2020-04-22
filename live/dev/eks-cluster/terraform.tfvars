@@ -1,0 +1,1 @@
+eks_cluster_name = sales-order-system-eks-cluster
