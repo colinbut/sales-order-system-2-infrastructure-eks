@@ -20,7 +20,7 @@ data "terraform_remote_state" "app_network" {
     backend = "s3"
     config  = {
         bucket  = "sales-order-system-eks-state-s3-bucket"
-        key     = "live/dev/app_network/terraform.tfstate"
+        key     = "live/dev/app-network/terraform.tfstate"
         region  = "eu-west-2"
     }
 }
