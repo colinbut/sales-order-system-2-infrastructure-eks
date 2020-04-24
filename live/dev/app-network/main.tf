@@ -5,7 +5,7 @@ terraform {
 }
 
 provider "aws" {
-    region = "eu-west-2"
+    region = "eu-west-1"
 }
 
 resource "aws_vpc" "app_vpc" {
@@ -18,7 +18,7 @@ resource "aws_internet_gateway" "app_internet_gateway" {
 }
 
 locals {
-    number_to_create = length(data.aws_availability_zones.availability_zones)
+    number_to_create = length(data.aws_availability_zones.availability_zones.names)
 }
 
 resource "aws_subnet" "app_subnets" {
