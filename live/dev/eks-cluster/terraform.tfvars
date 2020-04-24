@@ -1,1 +1,1 @@
-eks_cluster_name = sales-order-system-eks-cluster
+eks_cluster_name="sales-order-system-eks-cluster"
